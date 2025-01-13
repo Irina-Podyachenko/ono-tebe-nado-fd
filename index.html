@@ -17,50 +17,61 @@
         alt="Логотип проекта 'оно тебе надо'">
       </a>
       <nav class="header_menu">
-        <ul class="header_menu-list">
-          <li class="hea_menu-item header_menu-item_active">
-            <a class="header_menu-link" href="#0">Главная</a>
+        <ul class="header_links-list">
+          <li class="header_links-list-item header__links-list-item_no-bullit header__link_active">
+            <a class="header_link" href="#0">Главная</a>
           </li>
-          <li class="hea_menu-item header_menu-item_active">
-            <a class="header_menu-link" href="#0">Посмотреть лоты</a>
+          <li class="header_links-list-item header__link_active">
+            <a class="header_link" href="#0">Посмотреть лоты</a>
           </li>
-          <li class="hea_menu-item header_menu-item_active">
-            <a class="header_menu-link" href="#0">Об аукционе</a>
+          <li class="header_links-list-item header__link_active">
+            <a class="header_link" href="#0">Об аукционе</a>
           </li>
         </ul>
       </nav>
+      <address class="header_address">
+        <a href="tel:+70000000"> +9 (999) 555 5555</a>
+        <br><a href="mailto:mail@example.com">info@sobaka.ge</a>
+        <p>наб. Принсенграхт 263- 265, Амстердам</p>
+      </address>
     </header>
     <main>
-      <section class="cover overlay">
+      <div class="overlay">
+      <section class="cover">
         <h1 class="cover_title">
-            <span class="accent-span">ОНО</span>
-            <span class="accent-span text-center">ТЕБЕ</span>
-            <span class="accent-span text-right">НАДО</span>
+            <span class="aligned-text no-letter-spacing">ОНО</span>
+            <span class="aligned-text_center letter-spacing-extended">ТЕБЕ</span>
+            <span class="aligned-text_right no-letter-spacing">НАДО</span>
         </h1>
-        <div class="description">
-          <p>Аукцион вещей, в которые никто не верил</p>
-         <button class="button">Сделать ставку</button>
+        <div class="cover__description">
+          <p class="cover__description-text">Аукцион вещей, в которые никто не верил</p>
+         <button class="bet-button">Сделать ставку</button>
         </div>
       </section>
+    </div>
       <section class="lots">
-      <title>
+      <title class="lots_heading">
         <h2>Лоты</h2>
       </title>
       <section class="lot_1">
-        <ul class="menu_list">
-          <li class="menu-items_list">
-            <article class="card_1">
-               <h2 class="title">Фильмы режиссёра, который бросил киношколу</h2>
-               <p>Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?</p>
+        <ul class="lots__card-list">
+          <li class="lots__card-list-item">
+            <a class="card-link">
+            <article class="card">
+               <h2 class="card_title">Фильмы режиссёра, который бросил киношколу</h2>
+               <p class="card_text">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?</p>
             </article>
+          </a>
           </li>
         </ul>
-      </section>
+        <a class="lots__look-more-link"></a>
+       </section>
+       <!--
       <section class="lot_2">
         <ul class="menu_list">
         <li class="menu-items_list">
           <article class="card_2">
-             <h2 class="title">Книга, где описан один скучный день из жизни рекламного агента</h2>
+             <h2 class="card_type_book">Книга, где описан один скучный день из жизни рекламного агента</h2>
              <p>Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?</p>
           </article>
         </li>
@@ -69,19 +80,45 @@
         <ul class="menu_list">
           <li class="menu-items_list">
             <article class="card_3">
-               <h2 class="title">Картина, которую повторит даже 5-летний сын маминой подруги</h2>
+               <h2 class="card_type_picture">Картина, которую повторит даже 5-летний сын маминой подруги</h2>
                <p>Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков... Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?</p>
             </article>
           </li>
         </ul>
       </section>
-    </section>
+    </section> 
+    это вс переделать по образу 1 карточки и доделать остальное-->
     <section class="about">
-      <column></column>
+      <column class="about_column"></column>
+      <column class="about__logo">
+        <img class="about__logo-image">
+        <title class="about__title">
+          <p class="about__text"></p>
+        </title>
+      </column>
     </section>
     </main>
-    <footer>
-
+    <footer class="footer">
+      <address class="footer_address">
+        <a href="tel:+70000000"> +9 (999) 555 5555</a>
+        <br><a href="mailto:mail@example.com">info@sobaka.ge</a>
+        <p>наб. Принсенграхт 263- 265, Амстердам</p>
+      </address>
+      <menu class="footer__menu">
+        <nav class="footer__menu-list">
+          <ul class="footer__menu-list">
+            <li class="footer__menu-list-item">
+              <a class="footer__menu-link footer__menu-link_active"></a>
+            </li>
+          </ul>
+        </nav>
+      </menu>
+      <ul class="footer__social-list-item">
+        <li class="footer__social-list-item">
+          <a class="footer__social-link"></a>
+          <img class="footer__social-icon">
+        </li>
+      </ul>
     </footer>
   </body>
 </html>
