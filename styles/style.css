@@ -73,7 +73,7 @@
     top: 95px;
     right: 50px;
     bottom: 100px;
-    left: 810px;
+    left: 1000px;
 }
 
 .header_address-text {
@@ -113,7 +113,6 @@
 }
 
 .cover_title {
-   
     position: absolute;
     inset: 165px 50px 207px 50px;
     width: 100%;
@@ -186,13 +185,103 @@
 }
 
 .lots {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    width: 1052px;
+    height: 723px;
+    inset: 180px 24px 120px 24px;
+    
+    
+}
+
+.lots_heading {
+    display: flex;
+    position: absolute;
+    width: 121px;
+    height: 47px;
+    left: 40px;
+    color: black;
+    font-family: Raleway;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 46.96px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}
+.lots__card-list-item {
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+    width: 334px;
+    height: 596px;
+    top: 74px;
+    gap: 25px;
 
 }
 
+.film {
+    background-image: url(../images/card-lot-01.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+}
+.book {
+    background-image: url(../images/card-lot-02.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+}
+
+.picture {
+    background-image: url(../images/card-lot-03.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+}
+.card_link {
+    width: 100%;
+}
+
+.card {
+    position: relative;
+    width: 100%;
+}
 .about {
-
+    display: grid;
+    position: relative;
+    justify-content: inherit;
+    grid-template-columns: repeat(3, 1fr);
+    width: 1052px;
+    height: 595px;
+    inset: 120px, 24px, 180px, 24px;
 }
 
+.about_logo {
+    position: relative;
+    grid-template-columns: repeat(3, 1fr) 1fr;
+    width: 334px;
+    height: 596px;
+    src: url(/images/logo-black.svg);
+    src: url(/images/logo-white.svg);
+}
+
+.about_logo-image {
+    position: relative;
+   
+    
+}
+
+.ellipse {
+    width: 240px;
+    height: 240px;
+    background-color: black;
+}
 .footer {
 
 }
